@@ -1,0 +1,148 @@
+:root {
+    --primary-color: #0165E1;
+}
+
+body {
+    font-family: Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    cursor: pointer;
+}
+
+.logo-container {
+    width: 100vw;
+    text-align: center;
+    cursor: pointer;
+}
+.logo-container img {
+    width: 112px;
+}
+.form-container {
+    text-align: center;
+    width: 100vw;
+    cursor: pointer;
+}
+.form-group {
+    margin: 10px;
+}
+.form-group input {
+    min-width: 430px;
+    height: 40px;
+    padding: 12px;
+    border: none;
+    background-color: #f5f6f7;
+    border-radius: 2px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.30);
+    box-sizing: border-box;
+}
+.form-group input:focus {
+    outline: none;
+    border: 1px solid black;
+}
+
+.login-button {
+    background-color: var(--primary-color);
+    color: white;
+    font-family: Helvetica, sans-serif;
+    font-weight: bold;
+    height: 40px;
+    width: 430px;
+    font-size: 20px;
+    border-radius: 5px;
+    border: none;
+}
+.recover-container {
+    padding: 5px;
+}
+.recover-container a {
+    text-decoration: none;
+    color: var(--primary-color);
+    font-size: 14px;
+}
+
+.divider-container {
+    display: block;
+    margin: 16px 0 4px 0;
+    width: 430px;
+    height: 20px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.divider-container .seperator {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    height: 2px;
+}
+.divider-container span {
+    display: inline-block;
+    position: relative;
+    background-color: white;
+    padding: 0 20px;
+    top: -10px;
+}
+.newaccount-container a {
+    display: inline-block;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    color: black;
+    padding: 8px 0px;
+    position: relative;
+    top: 4px;
+    width: 320px;
+    text-decoration: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.gap {
+    height: 100px;
+    width: 100vw;
+}
+.footer-container {
+    font-size: 12px;
+    color: rgba(0, 0, 0, 0.6);
+}
+.language-container {
+    display: flex;
+    width: 100vw;
+    flex-wrap: wrap;
+}
+.language-box {
+    width: 50%;
+    color: gray;
+    margin-top: 2px;
+}
+.english-box {
+    font-weight: bold;
+}
+.meta-container {
+    font-weight: 500;
+    margin:10px
+}
+#plus-icon {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: 200;
+    border: 1px solid rgba(136, 138, 195, 0.7);
+}
+/* Media Query : Smartphones */
+@media screen and (max-width:550px) {
+    .form-group input {
+        min-width: 0;
+        width: 90%;
+    }
+    .login-button {
+        width: 90%;
+    }
+    .divider-container {
+        min-width: 0;
+        width: 90vw;
+    }
+    .newaccount-container a {
+        min-width: 0;
+        width: 70vw;
+    }
+}
